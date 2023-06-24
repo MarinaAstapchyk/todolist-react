@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background: linear-gradient(to right bottom, #f5d4e8, #e61c97);
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app-wrapper {
+  background-color: #d3f8f8;
+  min-width: 350px;
+  min-height: 350px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 30px black;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-input {
+  outline: bisque;
+  width: 250px;
+  padding: 10px 10px;
+  margin-right: 15px;
+  font-size: 15px;
+  color: black;
+  background-color: #f2ecf0;
+  border: 2px solid #191515;
+  border-radius: 8px;
+}
+
+.button-add {
+  width: 55px;
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 2px solid #191515;
+  background-color: #eb7fc2;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  border: 2px solid #393636;
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.button-complete,
+.button-edit,
+.button-delete {
+  border: 2px solid #191515;
+  outline: none;
+  background-color: #e9dbf4;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.button-complete {
+  color: #961e87;
+  margin-right: 10px;
+}
+
+.button-edit {
+  color: blueviolet;
+  margin-right: 10px;
+}
+
+.button-delete {
+  color: rosybrown;
+  margin-right: 5px;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #7d046f;
+}
+
+.list {
+  width: 200px;
+  background-color: #f2ecf0;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  color: gray;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }

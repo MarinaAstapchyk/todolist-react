@@ -25,10 +25,11 @@
 
 .task-input {
   outline: bisque;
-  width: 250px;
+  width: 290px;
   padding: 10px 10px;
   margin-right: 15px;
   font-size: 15px;
+  font-family: cursive;
   color: black;
   background-color: #f2ecf0;
   border: 2px solid #191515;
@@ -36,13 +37,20 @@
 }
 
 .button-add {
-  width: 55px;
+  width: 120px;
   padding: 10px 10px;
   font-size: 15px;
   border-radius: 8px;
   border: 2px solid #191515;
-  background-color: #eb7fc2;
+  background-color: rgba(254, 138, 211, 0.93);
   cursor: pointer;
+  font-family: cursive;
+  font-weight: bold;
+  transition: all 1s;
+}
+
+.button-add:hover {
+  transform: scale(1.1);
 }
 
 .list-item {
@@ -52,38 +60,57 @@
   border-radius: 8px;
   padding: 10px;
   max-height: 30px;
+  font-family: cursive;
+
 }
 
 .button-complete,
 .button-edit,
 .button-delete {
-  border: 2px solid #191515;
+  border: 2px solid blueviolet;
   outline: none;
   background-color: #e9dbf4;
   font-size: 15px;
   border-radius: 3px;
   padding: 5px;
+  cursor: pointer;
+  font-family: cursive;
+  float: none;
+  transition: all 1s;
+}
+
+.button-complete:hover {
+  transform: scale(1.1);
+}
+
+.button-edit:hover {
+  transform: scale(1.1);
+}
+
+.button-delete:hover {
+  transform: scale(1.1);
 }
 
 .button-complete {
-  color: #961e87;
+  color: #7d042c;
   margin-right: 10px;
 }
 
 .button-edit {
-  color: blueviolet;
+  color: #207e12;
   margin-right: 10px;
+  margin-left: 5px;
 }
 
 .button-delete {
-  color: rosybrown;
-  margin-right: 5px;
+  color: #ce2929;
+  margin-left: 5px;
 }
 
 .complete {
   text-decoration-style: solid;
   text-decoration-line: line-through;
-  text-decoration-color: #7d046f;
+  text-decoration-color: #d5073e;
 }
 
 .list {
@@ -91,7 +118,7 @@
   background-color: #f2ecf0;
   border: 2px solid blueviolet;
   border-radius: 5px;
-  color: gray;
+  color: #080808;
   font-size: 15px;
   padding-left: 10px;
   margin-right: 15px;
@@ -100,4 +127,12 @@
 input:focus,
 button:focus {
   outline: none;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: cursive;
+  font-weight: bold;
 }

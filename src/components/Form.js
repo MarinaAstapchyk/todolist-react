@@ -36,7 +36,7 @@ const Form = ({input, setInput,todos, setTodos, editTodo, setEditTodo}) => {
   }
 
   return (
-    <form onSubmit={onFormSubmit}>
+    <form onSubmit={onFormSubmit} className="form d-inline-block responsive d-flex justify-content-between">
 
       <input
         type="text"

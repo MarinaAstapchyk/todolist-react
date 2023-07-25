@@ -1,4 +1,6 @@
 import React from 'react';
+import {Row} from "react-bootstrap";
+
 
 const TodoList = ({todos, setTodos, setEditTodo}) => {
 
@@ -23,9 +25,11 @@ const TodoList = ({todos, setTodos, setEditTodo}) => {
   }
 
   return (
-    <div>
+    <div className="d-inline-block responsive d-flex justify-content-between">
+    <Row>
+
       {todos.map(todo => (
-        <li className='list-item'
+        <li className="list-item d-inline-block responsive d-flex justify-content-between"
             key={todo.id}
         >
           <input
@@ -34,6 +38,8 @@ const TodoList = ({todos, setTodos, setEditTodo}) => {
             className={`list ${todo.completed ? "complete" : ""}`}
             onChange={event => event.preventDefault()}
           />
+
+
 
           <div>
             <button
@@ -60,9 +66,11 @@ const TodoList = ({todos, setTodos, setEditTodo}) => {
             </button>
 
           </div>
+
         </li>
       ))}
 
+    </Row>
     </div>
   );
 };
